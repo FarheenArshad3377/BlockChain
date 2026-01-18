@@ -19,24 +19,24 @@ app.use(bodyParser.json());
 // DB connect
 connectDB();
 
-// Serve React frontend
+// Handle ES module __dirname
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Replace this path if your React app is elsewhere
+// Serve React frontend
 app.use(express.static(path.join(__dirname, "../frontend/blockchain/build")));
-
-app.get("*", (req, res) => {
-  // Check if request is for API
-  if (req.path.startsWith("/api")) return res.status(404).send({ message: "API route not found" });
-  res.sendFile(path.join(__dirname, "../frontend/blockchain/build", "index.html"));
-});
 
 // API Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/wallet", walletRoutes);
 app.use("/api/transactions", transactionRoutes);
 app.use("/api/block", blockRoutes);
+
+// Catch-all to serve React frontend for non-API routes
+app.get("*", (req, res) => {
+  if (req.path.startsWith("/api")) return res.status(404).send({ message: "API route not found" });
+  res.sendFile(path.join(__dirname, "../frontend/blockchain/build", "index.html"));
+});
 
 const PORT = process.env.PORT || 5030;
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
