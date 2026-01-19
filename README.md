@@ -1,36 +1,33 @@
 # Blockchain Transaction System (MERN)
 
 **Description**  
-A complete **MERN‑stack blockchain project** that simulates secure money transactions and block creation. Built with React for the frontend, Node.js + Express for the backend, and MongoDB for decentralized-like storage of transactions and blocks.
+A full-stack **blockchain project** that simulates secure money transactions and block creation. Built with React, HTML, CSS, and JavaScript for the frontend, Node.js + Express for the backend, and PostgreSQL for storing transactions and blocks.
 
 This system allows users to:
 ✔️ Create and validate transactions  
 ✔️ Generate new blocks and append them to the blockchain  
 ✔️ View transaction history and block data  
-✔️ Interact with a user‑friendly frontend interface  
+✔️ Interact with a responsive frontend interface  
 
 ## 🧑‍💻 My Role — Contributor
 
-I contributed to this project by:  
-- Implementing the **block creation logic**, including hashing and linking blocks  
-- Integrating **money transaction handling** between wallets/accounts  
-- Building RESTful APIs in **Express.js** for transactions and blockchain data  
-- Connecting backend logic with **React frontend** to display real‑time blockchain data  
-- Ensuring secure and stable interactions between UI and server
+I contributed by:  
+- Implementing the **block creation logic**, including hashing and chain linking  
+- Managing **money transactions** between wallets  
+- Building RESTful APIs in **Express.js** for blockchain data  
+- Connecting backend with **React frontend** for real-time blockchain visualization  
+- Ensuring secure and stable communication between UI and server  
 
 ## 🚀 Tech Stack
 
-- **Frontend:** React.js, CSS  
+- **Frontend:** React, HTML, CSS, JavaScript  
 - **Backend:** Node.js, Express.js  
-- **Database:** MongoDB  
+- **Database:** PostgreSQL  
 - **Blockchain Concepts:** Block hashing, chain linking, transaction validation  
 
 ## 📦 Features
 
-- Add new transactions
-- Create new blocks
-- Maintain an immutable chain of blocks
-- Dynamic UI for transaction and block visualization
-
-
-Extend with setup instructions, screenshots, and contribution guide.
+- Add new transactions  
+- Create new blocks  
+- Maintain an immutable chain of blocks  
+- Dynamic UI for transaction and block visualization  
