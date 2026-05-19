@@ -1,4 +1,4 @@
-# Blockchain Transaction System (MERN)
+# Blockchain Transaction System (MERN & MEAN)
 
 **Description**  
 A full-stack **blockchain project** that simulates secure money transactions and block creation. Built with React, HTML, CSS, and JavaScript for the frontend, Node.js + Express for the backend, and PostgreSQL for storing transactions and blocks.
@@ -20,8 +20,8 @@ I contributed by:
 
 ## 🚀 Tech Stack
 
-- **Frontend:** React, HTML, CSS, JavaScript  
-- **Backend:** Node.js, Express.js  
+- **Frontend:** React, HTML, CSS, JavaScript , C#  
+- **Backend:** Node.js, Express.js , .Net-Core-ASP  
 - **Database:** PostgreSQL  
 - **Blockchain Concepts:** Block hashing, chain linking, transaction validation  
 
